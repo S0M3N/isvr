@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <title>ISVRx</title>
+        <!-- gsap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    </head>
+    <body class="bg-primary text-white md:container mx-auto py-[0.1px] font-poppins">
+        <nav class="px-2 py-4 flex flex-col md:flex-row justify-between items-center bg-primary text-white">
+            <div class="flex justify-between w-full">
+                <div id="brand" class="text-2xl font-semibold hover:text-secondary2 transition-all ease-in-out">
+                    <a href="/index.html">INDOPLANETx</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-button" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul id="menu" class="hidden md:flex md:items-center md:space-x-5 flex-col md:flex-row space-y-4 my-2 md:my-0 md:space-y-0 w-full md:w-auto mt-2 md:mt-0">
+                <li>
+                    <a href="/index.html" class="hover:text-gray-400 transition-all ease-in-out">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html" class="hover:text-gray-400 transition-all ease-in-out">About</a>
+                </li>
+                <li>
+                    <a href="./services.html" class="hover:text-gray-400 transition-all ease-in-out">Services</a>
+                </li>
+                <li>
+                    <a href="mailto:info@indoplanetxsvr.com" class="bg-white px-4 py-3 rounded-lg text-black hover:bg-secondary hover:text-white transition-all ease-in-out">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="flex flex-col min-h-[45vh] items-center justify-center space-y-3">
+                <p class=" text-center">INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD.</p>
+                <h1 class="md:text-[128px] text-[45px] text-center font-play">We build the Future!</h1>
+                <p class="w-[60%] text-center text-sm leading-6">Unleashing potential at the nexus of EdTech and space exploration, bridging education with the limitless possibilities of cutting-edge research in space.</p>
+                <div class="flex space-x-3">
+                    <a href="./services.html" class="btn px-4 py-3 rounded-lg border border-white hover:bg-white hover:text-black transition-all ease-in-out">Explore More</a>
+                    <a href="mailto:info@indoplanetxsvr.com" class="btn px-4 py-3 rounded-lg bg-secondary hover:bg-secondary2 transition-all ease-in-out">Contact Us</a>
+                </div>
+            </section>
+            <section id="associate" class="hidden min-h-[25vh] md:flex flex-col  mt-[90px] items-center justify-center space-y-7">
+                <h2 class="text-[25px]">In Association With</h2>
+                <ul class="flex space-x-10 text-[14px] font-play">
+                    <li>Equatorial Space Systems</li>
+                    <li>Atriom Technologies Ltd.</li>
+                    <li>Space 4 All</li>
+                    <li>ISpA</li>
+                    <li>Front Forum Focus</li>
+                    <li>ASADEL Technologies Pvt. Ltd.</li>
+                    <li>Six Sigma Helitrans Aviation</li>
+                </ul>
+            </section>
+            <section class="flex flex-col md:flex-row space-x-3">
+                <div class="p-4 lg:w-1/3 md:w-1/2 w-full flex flex-col space-y-[60px]">
+                    <div class="flex space-x-3 min-h-[90px] my-[30px]">
+                        <div class="border border-secondary2"></div>
+                        <div class="flex flex-col items-start space-y-3">
+                            <p class="text-xl font-semibold">Propelling Innovation</p>
+                            <p>Where Education Technology Meets the Frontiers of Space and Research.</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3 min-h-[90px] my-[30px]">
+                        <div class="w-1/4"></div>
+                        <div class="flex flex-col items-start space-y-3">
+                            <p class="text-xl font-semibold">Igniting Minds</p>
+                            <p>With a focus on space education, we ignite students' curiosity, guiding them towards the vast expanse above.</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3 min-h-[90px] my-[30px]">
+                        <div class="w-1/4"></div>
+                        <div class="flex flex-col items-start space-y-3">
+                            <p class="text-xl font-semibold">Innovative Mindset</p>
+                            <p>Since inception, we've overcome challenges, boasting unmatched achievements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 w-1/3 lg:block hidden bg-center bg-cover bg-no-repeat" style="background-image: url('./assets/astr.png');"></div>
+                <div class="p-4 lg:w-1/3 md:w-1/2 w-full flex flex-col space-y-[60px]">
+                    <div class="flex space-x-3 min-h-[90px]">
+                        <div class="flex flex-col items-start space-y-3">
+                            <p class="text-xl font-semibold">Pioneering the Research</p>
+                            <p>Working on different technologies, and pioreering multiple researches in the country.</p>
+                            <a href="./services.html" class="btn px-4 py-3 rounded-lg border border-white hover:bg-white hover:text-black transition-all ease-in-out">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3 min-h-[90px] my-[30px]">
+                        <div class="w-1/4"></div>
+                        <div class="flex flex-col items-start space-y-3">
+                            <p class="text-xl font-semibold">Rocket and Propulsion</p>
+                            <p>Working on different propulsion technologies and fuels for better and efficient rocket launches.</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3 min-h-[90px] my-[30px]">
+                        <div class="w-1/4"></div>
+                        <div class="flex flex-col items-start space-y-3">
+                            <p class="text-xl font-semibold">Energy and drone</p>
+                            <p>Working on better and efficient energy source for UAVs for long and efficient flight time.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="flex flex-col items-center justify-center my-6 md:space-y-[40px] space-y-2 py-[60px] min-h-[60vh]">
+                <h1 class="text-3xl font-semibold text-center">
+                    You might be Interesed Here!
+                </h1>
+                <p class="text-center">
+                    The domains we are currently working in.
+                </p>
+                <div class="flex md:flex-row flex-col items-center md:justify-between w-full space-y-2 md:space-y-0 px-2">
+                    <div class="md:w-[25vw] w-full py-3 flex items-start space-x-3 bg-black rounded-lg p-4">
+                        <div class="h-[30px] border border-secondary2"></div>
+                        <div class="flexx flex-col items-start">
+                            <h1 class="text-xl font-semibold">Rocketry</h1>
+                            <p class=" my-4">Pioneering the future of rocketry, we lead with unparalleled expertise. Our achievements soar beyond limits, setting records in launches and shaping the trajectory of space exploration education.</p>
+                            <a href="Domains/Rocket.html" class="text-secondary2 my-4 hover:text-secondary transition-all ease-in-out">Learn more ➜</a>
+                        </div>
+                    </div>
+                    <div class="md:w-[25vw] w-full py-3 flex items-start space-x-3 bg-black rounded-lg p-4">
+                        <div class="h-[30px] border border-secondary2"></div>
+                        <div class="flexx flex-col items-start">
+                            <h1 class="text-xl font-semibold">Satellite</h1>
+                            <p class=" my-4">Unlock the cosmos with our Cube Satellite Courses. Elevate your knowledge in communications and satellite design, shaping the future of space technology.</p>
+                            <a href="Domains/Satellite.html" class="text-secondary2 my-4 hover:text-secondary transition-all ease-in-out">Learn more ➜</a>
+                        </div>
+                    </div>
+                    <div class="md:w-[25vw] w-full py-3 flex items-start space-x-3 bg-black rounded-lg p-4">
+                        <div class="h-[30px] border border-secondary2"></div>
+                        <div class="flexx flex-col items-start">
+                            <h1 class="text-xl font-semibold">Drone Technologies</h1>
+                            <p class=" my-4">Explore the skies with our Drone Technologies program. Unleash your potential in building and operating cutting-edge drones, shaping the future of aerial innovation.</p>
+                            <a href="Domains/Drone.html" class="text-secondary2 my-4 hover:text-secondary transition-all ease-in-out">Learn more ➜</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col items-center md:justify-between w-full space-y-2 md:space-y-0 px-2">
+                    <div class="md:w-[25vw] w-full py-3 flex items-start space-x-3 bg-black rounded-lg p-4">
+                        <div class="h-[30px] border border-secondary2"></div>
+                        <div class="flex flex-col items-start">
+                            <h1 class="text-xl font-semibold">Astronomy and Space Research
+                            </h1>
+                            <p class=" my-4">Embark on a cosmic journey with our Astronomy and Space Research initiatives. Uncover the mysteries of the universe through groundbreaking research and exploration.</p>
+                            <a href="Domains/Astronomy.html" class="text-secondary2 my-4 hover:text-secondary transition-all ease-in-out">Learn more ➜</a>
+                        </div>
+                    </div>
+                    <div class="md:w-[25vw] w-full py-3 flex items-start space-x-3 bg-black rounded-lg p-4">
+                        <div class="h-[30px] border border-secondary2"></div>
+                        <div class="flexx flex-col items-start">
+                            <h1 class="text-xl font-semibold">Robotics and AI</h1>
+                            <p class=" my-4">Dive into the synergy of Robotics and AI at the forefront of innovation. Our programs empower learners to explore cutting-edge technologies shaping the future of automation.</p>
+                            <a href="Domains/Robotics.html" class="text-secondary2 my-4 hover:text-secondary transition-all ease-in-out">Learn more ➜</a>
+                        </div>
+                    </div>
+                    <div class="md:w-[25vw] w-full py-3 flex items-start space-x-3 bg-black rounded-lg p-4">
+                        <div class="h-[30px] border border-secondary2"></div>
+                        <div class="flexx flex-col items-start">
+                            <h1 class="text-xl font-semibold">Space Medicine</h1>
+                            <p class=" my-4">Venture into the frontier of health beyond Earth. Discover our Space Medicine program, pioneering advancements to ensure well-being in the cosmos.</p>
+                            <a href="Domains/Spacemeds.html" class="text-secondary2 my-4 hover:text-secondary transition-all ease-in-out">Learn more ➜</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col space-y-4 items-center justify-center w-full">
+                <p class="text-center text-2xl font-semibold">
+                    Lets go through our journey
+                </p>
+                <div class="flex space-x-2 md:space-x-10 w-full">
+                    <div class="w-1/2 flex flex-col items-end space-y-6">
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Started as ISVR</h1>
+                                <span class="text-sm text-gray-400">2020</span>
+                                <p>Founded as ISVR, focusing on innovative space ventures and research.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Launched 3 km sounding rocket.</h1>
+                                <span class="text-sm text-gray-400">2021</span>
+                                <p>Became the first in North India to successfully launch a 3 km sounding rocket.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Received Startup India recognition.</h1>
+                                <span class="text-sm text-gray-400">Recognition</span>
+                                <p>Awarded Startup India recognition for innovative contributions and significant impact in the space tech field.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Mentored 500+ students.</h1>
+                                <span class="text-sm text-gray-400">Mentorship</span>
+                                <p>Mentored over 500 students through educational programs, preparing them for careers in space science.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Received Startup Uttarakhand recognition.</h1>
+                                <span class="text-sm text-gray-400">2024</span>
+                                <p>Awarded Startup Uttarakhand recognition for innovative contributions and significant impact in the space tech field.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-secondary2"></div>
+                    <div class="w-1/2 flex flex-col space-y-6 py-20">
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Recognition</h1>
+                                <span class="text-sm text-gray-400">Space Tutor from ISRO.</span>
+                                <p>Received recognition from ISRO as a Space Tutor for contributions to space education.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Officially incorporated.</h1>
+                                <span class="text-sm text-gray-400">Jan 2023</span>
+                                <p>Incorporated as INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD., marking a new phase.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Groundbreaking research conducted</h1>
+                                <span class="text-sm text-gray-400">Research</span>
+                                <p>Conducted significant research across multiple space technology domains, achieving notable breakthroughs.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Conducted 50+ workshops and seminars.</h1>
+                                <span class="text-sm text-gray-400">Outreached</span>
+                                <p>Organized over 50 workshops and seminars to promote space technology and engage with students.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[30vw] border border-white p-2 rounded-lg flex space-x-2">
+                            <div class="border border-secondary"></div>
+                            <div class="flex flex-col items-start justify-between">
+                                <h1 class="text-xl font-semibold">Incubated By NRDC</h1>
+                                <span class="text-sm text-gray-400">Incubation-2024</span>
+                                <p>Currenty we have been incubated the NRDC.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="impo" class="my-10 rounded-[15px] bg-gradient-to-b from-[#1E1E1E] to-primary p-8 flex flex-col md:flex-row">
+                <div class="md:w-3/5 flex flex-col items-start space-y-7">
+                    <div class="imp bg-primary rounded-full px-2 py-1 font-play">
+                        <span class="text-secondary2 font-extrabold">&middot;</span>
+                        impo</div>
+                    <p class="text-[30px] font-[400]">
+                        Igniting Minds, Propelling
+                        <br>Innovation
+                    </p>
+                    <p class="text-[12px]">With a focus on space education, we ignite students' curiosity, guiding them towards the vast expanse above. Since inception, we've overcome challenges, boasting unmatched achievements in rocket launches. The ISVRx Learning Labs exemplify our commitment, showcasing innovation and leadership in shaping future space enthusiasts.</p>
+                </div>
+                <div class="md:w-2/5 flex items-center justify-center">
+                    <img src="./assets/drone.png" alt="drone" class="w-[350px]">
+                </div>
+            </section>
+            <section class="intern flex flex-col md:flex-row space-y-3 mb-3 bg-gradient-to-b from-primary to-[#1E1E1E] p-8 rounded-lg">
+                <div class="md:w-[40%] flex flex-col items-start space-y-4">
+                    <p>Training and Internship</p>
+                    <p class="lg:text-[45px] text-[25px] md:w-[60%]">Get Ready to Enter into the Realm of Space</p>
+                    <p>Apply Now!</p>
+                </div>
+                <div class="md:w-[60%] h-full flex flex-col items-start md:items-end justify-between">
+                    <div class="flex flex-col items-start md:items-end space-y-4">
+                        <p class="text-[30px]">
+                            Training Opportunities in Multiple Domains
+                        </p>
+                        <div class="flex flex-col items-start md:items-end">
+                            <p>Choose one</p>
+                            <p>and Dive into the Vast Realm of Space</p>
+                        </div>
+                        <a href="#" class="btn px-4 py-3 rounded-lg bg-secondary hover:bg-secondary2 transition-all ease-in-out">Apply Now ↗</a>
+                    </div>
+                </div>
+            </section>
+            <section class="text-gray-400body-font">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-col text-center w-full mb-20">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Wall of frames</h1>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Explore our journey through the lens of innovation and discovery. Our gallery showcases the milestones, achievements, and moments that define INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD.</p>
+                    </div>
+                    <div class="flex flex-wrap -m-4">
+                        <div class="lg:w-1/3 sm:w-1/2 p-4">
+                            <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/lab.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-primary opacity-0 hover:opacity-90 transition-all ease-in-out">
+                                    <h2 class="tracking-widest text-sm title-font font-medium text-secondary mb-1">Research Lab</h2>
+                                    <h1 class="title-font text-lg font-medium text-white mb-3">ISVRx Office cum Lab</h1>
+                                    <p class="leading-relaxed">The ISVR lab (INDOPLANETX SPACE VAULT AND RESEARCH) is a cutting-edge facility dedicated to advancing space technologies and educational initiatives. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 sm:w-1/2 p-4">
+                            <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/news.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-primary opacity-0 hover:opacity-90 transition-all ease-in-out">
+                                    <h2 class="tracking-widest text-sm title-font font-medium text-secondary mb-1">Workshop</h2>
+                                    <h1 class="title-font text-lg font-medium text-white mb-3">Workshop at Orissa</h1>
+                                    <p class="leading-relaxed">The newspaper cutting features a workshop conducted by ISVRx at Orissa, showcasing their efforts to educate and inspire young minds in space science and technology.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 sm:w-1/2 p-4">
+                            <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/MoU.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-primary opacity-0 hover:opacity-90 transition-all ease-in-out">
+                                    <h2 class="tracking-widest text-sm title-font font-medium text-secondary mb-1">MoU</h2>
+                                    <h1 class="title-font text-lg font-medium text-white mb-3">ISVRx X Six Sigma</h1>
+                                    <p class="leading-relaxed">The picture captures a formal MoU signing ceremony between INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx) and Six Sigma HELITRANS AVIATION. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 sm:w-1/2 p-4">
+                            <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/DroneTest.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-primary opacity-0 hover:opacity-90 transition-all ease-in-out">
+                                    <h2 class="tracking-widest text-sm title-font font-medium text-secondary mb-1">Drone</h2>
+                                    <h1 class="title-font text-lg font-medium text-white mb-3">Drone at Work</h1>
+                                    <p class="leading-relaxed">The photo of the drone testing by INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx) showcases a cutting-edge drone in action.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 sm:w-1/2 p-4">
+                            <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/Training.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-primary opacity-0 hover:opacity-90 transition-all ease-in-out">
+                                    <h2 class="tracking-widest text-sm title-font font-medium text-secondary mb-1">Training</h2>
+                                    <h1 class="title-font text-lg font-medium text-white mb-3">Training Students</h1>
+                                    <p class="leading-relaxed">The photo of the student training session by INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx) captures a dynamic and engaging learning environment. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 sm:w-1/2 p-4">
+                            <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/RocketTest.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-primary opacity-0 hover:opacity-90 transition-all ease-in-out">
+                                    <h2 class="tracking-widest text-sm title-font font-medium text-secondary mb-1">Record Launch</h2>
+                                    <h1 class="title-font text-lg font-medium text-white mb-3">3KM sounding rocket</h1>
+                                    <p class="leading-relaxed">The photo capturing the rocket launch of North India's first 3km sounding rocket, organized by INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx), is a momentous and exhilarating scene. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="my-3">
+                <div class="w-full p-4 md:py-8">
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                        <a href="./index.html" class="flex text-[30px] items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                            IndoplanetX
+                        </a>
+                        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                            <li>
+                                <a href="./about.html" class="hover:underline me-4 md:me-6">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@indoplanetxsvr.com" class="hover:underline">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
+                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2024
+                        <a href="#" class="hover:underline">IndoplanetX</a>. All Rights Reserved.</span>
+                </div>
+            </footer>
+        </main>
+
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function () {
+                var menu = document.getElementById('menu');
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    gsap.fromTo("#menu li", {
+                        opacity: 0,
+                        y: -20
+                    }, {
+                        opacity: 1,
+                        y: 0,
+                        stagger: 0.1,
+                        duration: 0.8
+                    });
+                } else {
+                    menu.classList.add('hidden');
+                }
+            });
+        </script>
+
+
+    </body>
+</html>

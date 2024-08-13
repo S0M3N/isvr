@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../output.css" rel="stylesheet">
+        <title>ISVRx</title>
+        <!-- gsap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    </head>
+    <body class="bg-primary text-white md:container mx-auto py-[0.1px] font-poppins">
+        <nav class="px-2 py-4 flex flex-col md:flex-row justify-between items-center bg-primary text-white">
+            <div class="flex justify-between w-full">
+                <div id="brand" class="text-2xl font-semibold hover:text-secondary2 transition-all ease-in-out">
+                    <a href="/index.html">INDOPLANETx</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-button" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul id="menu" class="hidden md:flex md:items-center md:space-x-5 flex-col md:flex-row space-y-4 my-2 md:my-0 md:space-y-0 w-full md:w-auto mt-2 md:mt-0">
+                <li>
+                    <a href="/index.html" class="hover:text-gray-400 transition-all ease-in-out">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html" class="hover:text-gray-400 transition-all ease-in-out">About</a>
+                </li>
+                <li>
+                    <a href="/services.html" class="hover:text-gray-400 transition-all ease-in-out">Services</a>
+                </li>
+                <li>
+                    <a href="mailto:info@indoplanetxsvr.com" class="bg-white px-4 py-3 rounded-lg text-black hover:bg-secondary hover:text-white transition-all ease-in-out">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="flex flex-col md:flex-row space-x-2 py-2 w-full">
+            <div class="py-12 md:w-[75%]">
+                <img class="aspect-video w-full" src="../assets/domain/Sat.webp" class="w-full aspect-video object-cover mb-3" alt="">
+                <div class="flex items-start flex-col space-y-4 px-8 py-2">
+                    <p class="text-sm text-gray-400">Satellite and communication</p>
+                    <div class="flex space-x-2">
+                        <div class="border border-secondary2"></div>
+                        <h1 class="text-3xl font-semibold">
+                            Advancing Satellite Technology
+                        </h1>
+                    </div>
+                    <p class="text-justify">
+                        At INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx), our commitment to satellite technology is driven by the pursuit of innovation and excellence. We are dedicated to developing advanced satellite systems that push the boundaries of space exploration, communication, and observation. Our focus spans the entire satellite lifecycle, from design and manufacturing to launch and operation, ensuring that our solutions are at the forefront of the industry.
+                    </p>
+                    <h1 class="text-xl font-semibold">Research and Development</h1>
+                    <p class="text-justify">
+                        Our R&D efforts in satellite technology focus on advancing key areas such as satellite propulsion systems, on-board systems integration, and space debris mitigation. We are exploring new materials and technologies to enhance satellite durability, efficiency, and performance. Our research also includes developing innovative solutions for satellite constellation management and ensuring that our satellites can operate effectively in the complex space environment.
+                    </p>
+                    <h1 class="text-xl font-semibold">Training and Skill Development</h1>
+                    <p class="text-justify">
+                        ISVRx is committed to nurturing the next generation of satellite engineers and scientists through comprehensive training programs. Our educational initiatives are designed to provide hands-on experience and in-depth knowledge of satellite technology. Our programs include:
+                    </p>
+                    <ul class="text-justify list-disc">
+                        <li>
+                            <b>Satellite Design and Engineering:
+                            </b>A course covering the fundamentals of satellite design, including structural, thermal, and power systems. Participants learn about the key components and engineering principles required for building and operating satellites.
+                        </li>
+                        <li>
+                            <b>Satellite Communication Systems:
+                            </b>Training on the principles of satellite communication, including modulation techniques, signal processing, and link budget analysis. This course prepares participants to work with communication satellites and understand their role in global networks.
+                        </li>
+                        <li>
+                            <b>Satellite Operations and Management:
+                            </b>Practical training on the operation and management of satellite systems, including mission planning, satellite control, and data analysis. Participants gain experience in managing satellite operations and troubleshooting issues.
+                        </li>
+                    </ul>
+                    <h1 class="text-xl font-semibold">Collaborations and Opportunities</h1>
+                    <p class="text-justify">
+                        ISVRx collaborates with space agencies, research institutions, and industry partners to advance satellite technology and expand our capabilities. These collaborations enable us to leverage expertise, share resources, and contribute to international space missions and projects.
+                    </p>
+                    <p class="text-justify">
+                        We also work closely with educational institutions to provide students and researchers with opportunities for hands-on experience and real-world application of satellite technology. Our partnerships help ensure that our training programs and research efforts are aligned with the latest industry trends and needs.
+                    </p>
+                    <h1 class="text-xl font-semibold">Join Us in Exploring the Final Frontier</h1>
+                    <p class="text-justify">
+                        Whether you are a student, researcher, or industry professional, ISVRx offers opportunities to engage with and contribute to the exciting field of satellite technology. Our satellite division is a hub of innovation and excellence, providing a platform for learning, discovery, and advancement.
+                    </p>
+                    <p class="text-justify">
+                        Contact Us today to learn more about our satellite technology programs, research projects, and how you can be part of our mission to explore and understand the universe. Together, let's reach new heights in satellite technology and space exploration.
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-[25%] flex flex-col space-y-8 md:py-12 px-4">
+                <h1 class="text-xl underline underline-offset-8 md:hidden">More to read!
+                </h1>
+                <div class="card flex flex-col space-y-2 items-start w-full pb-2">
+                    <img class="aspect-video w-full" src="../assets/domain/rocket.jpg" alt="">
+                    <span>Rocket</span>
+                    <p class="text-sm text-justify text-gray-400">At INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx), we are at the forefront of innovation in rocketry, driving advancements that push the boundaries...</p>
+                    <a href="./Rocket.html" class="text-secondary hover:text-secondary2 transition-all ease-in-out">Learn More...</a>
+                </div>
+                <div class="card flex flex-col space-y-2 items-start w-full pb-2">
+                    <img class="aspect-video w-full" src="../assets/domain/Drone.jpg" alt="">
+                    <span>Drone</span>
+                    <p class="text-sm text-justify text-gray-400">At INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx), we are pioneering advancements in drone technology with a focus on innovation, efficien...</p>
+                    <a href="./Drone.html" class="text-secondary hover:text-secondary2 transition-all ease-in-out">Learn More...</a>
+                </div>
+                <div class="card flex flex-col space-y-2 items-start w-full pb-2">
+                    <img class="aspect-video w-full" src="../assets/domain/astronomy.jpg" alt="">
+                    <span>Astronomy</span>
+                    <p class="text-sm text-justify text-gray-400">At INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx), our passion for space extends beyond the realms of technology and...</p>
+                    <a href="./Astronomy.html" class="text-secondary hover:text-secondary2 transition-all ease-in-out">Learn More...</a>
+                </div>
+                <div class="card flex flex-col space-y-2 items-start w-full pb-2">
+                    <img class="aspect-video w-full" src="../assets/domain/robotics.jpg" alt="">
+                    <span>Robotics and Ai</span>
+                    <p class="text-sm text-justify text-gray-400">At INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx), we are pushing the boundaries of Robotics and Artificial Intelligence (AI) to create intelligent systems that redefine what machines can...</p>
+                    <a href="./Robotics.html" class="text-secondary hover:text-secondary2 transition-all ease-in-out">Learn More...</a>
+                </div>
+                <div class="card flex flex-col space-y-2 items-start w-full pb-2">
+                    <img class="aspect-video w-full" src="../assets/domain/space_med.jpg" alt="">
+                    <span>Space Medicine</span>
+                    <p class="text-sm text-justify text-gray-400">At INDOPLANETX SPACE VAULT AND RESEARCH PVT. LTD. (ISVRx), we are dedicated to pioneering the field of Space Medicine, focusing on the health and well-being of astronauts and space travelers...</p>
+                    <a href="./Spacemeds.html" class="text-secondary hover:text-secondary2 transition-all ease-in-out">Learn More...</a>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer class="my-3">
+            <div class="w-full p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <a href="#" class="flex text-[30px] items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        IndoplanetX
+                    </a>
+                    <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
+                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2024
+                    <a href="#" class="hover:underline">IndoplanetX</a>. All Rights Reserved.</span>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function () {
+                var menu = document.getElementById('menu');
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    gsap.fromTo("#menu li", {
+                        opacity: 0,
+                        y: -20
+                    }, {
+                        opacity: 1,
+                        y: 0,
+                        stagger: 0.1,
+                        duration: 0.8
+                    });
+                } else {
+                    menu.classList.add('hidden');
+                }
+            });
+        </script>
+    </body>
+</html>
